@@ -1,3 +1,4 @@
+#são 4 atendentes, apenas 4 senhas para dar entrada#
 from random import randint
 print ('------------------------------------------------------------')
 print ('digite 1 para fila de ALTA PRIORIDADE - idosos (60+)')
@@ -11,8 +12,10 @@ while True:
     f1=[]
     f2=[]
     f3=[]
-    for i in range(5):
-        b=(randint(0,99))
+    for i in range(4): 
+        #senhas para a fila#
+        b=(randint(0,99)) 
+        #------------------#
         inp=int(input('digite em qual fila deseja dar entrada: '))
         if ((inp)==1):
            f1.append(b)
@@ -48,13 +51,3 @@ while True:
                     f3.pop(0)
                     print ('a fila tem',len(f3),'pessoas')
                     print ('')
-
-                
-
-
-
-
-        
-
-    
-
